@@ -12,6 +12,7 @@ import Col from 'react-bootstrap/Col'
 function App() {
   const [activities, setActivities] = useState([])
   const [newActivity, setNewActivity] = useState('')
+  newActivity = 'HELLO'
 
   useEffect(() => {
     activityService
@@ -63,7 +64,7 @@ function App() {
       <Container>
         <Row id="first-row">
           <Col>
-            <ActivityDisplay name="Hello"/>
+            <ActivityDisplay name={newActivity}/>
           </Col>
         </Row>
         <Row id="second-row">
