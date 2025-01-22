@@ -63,7 +63,7 @@ function App() {
       <Container>
         <Row id="first-row">
           <Col>
-            <ActivityDisplay name={newActivity}/>
+            <ActivityDisplay name="Hello"/>
           </Col>
         </Row>
         <Row id="second-row">
